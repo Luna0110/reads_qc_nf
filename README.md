@@ -5,6 +5,7 @@ A nextflow pipeline takes FASTQ reads, generate a CSV file with the Q30 rate, Q2
 **parameter:**
 
 --reads '/path/to/reads'
+
 --outputDir '/path/to/output'
 
 **output file:**
