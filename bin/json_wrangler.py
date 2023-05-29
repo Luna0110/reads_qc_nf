@@ -1,11 +1,7 @@
 #!/usr/bin/env python3
 """Extract relevant fields from fastp output json"""
-
 import sys
-
-import click
 import pandas as pd
-
 
 def main():
     col_names = [
@@ -26,9 +22,7 @@ def main():
         data = json_data["summary"]["before_filtering"]
         df.loc[filename] = data
 
-
     df.to_csv("fastp_results_extracted.csv")
-
 
 if __name__ == "__main__":
     main()
